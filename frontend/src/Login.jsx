@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/login", formData);
+      const res = await axios.post("https://userprofile-4g3u.onrender.com/login", formData);
       localStorage.setItem("token", res.data.token);
       alert("Login successful!");
       navigate("/profile");
