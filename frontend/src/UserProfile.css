@@ -1,0 +1,30 @@
+body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #007bff, #00d4ff);
+    font-family: Arial, sans-serif;
+    
+  }.profile-container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .profile-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
