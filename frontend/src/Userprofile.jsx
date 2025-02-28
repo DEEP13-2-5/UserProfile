@@ -21,7 +21,7 @@ const UserProfile = () => {
           return;
         }
 
-        const res = await axios.get("http://localhost:5000/profile", {
+        const res = await axios.get("https://userprofile-4g3u.onrender.com/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUserData(res.data);
@@ -44,7 +44,7 @@ const UserProfile = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.put("http://localhost:5000/profile/update", formData, {
+      const res = await axios.put("https://userprofile-4g3u.onrender.com/profile/update", formData, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert(res.data.message);
@@ -60,7 +60,7 @@ const UserProfile = () => {
 
     try {
       const token = localStorage.getItem("token");
-      await axios.delete("http://localhost:5000/profile/delete", {
+      await axios.delete("https://userprofile-4g3u.onrender.com/profile/delete", {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("Account deleted successfully!");
