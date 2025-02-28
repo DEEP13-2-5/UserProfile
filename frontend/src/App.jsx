@@ -7,6 +7,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Signup />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<UserProfile />} />
@@ -16,3 +17,4 @@ const App = () => {
 };
 
 export default App;
+
