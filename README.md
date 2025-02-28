@@ -18,7 +18,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/user-profile-management.git
+git clone https://github.com/DEEP13-2-5/UserProfile
 Install dependencies:
 bash
 Copy
